@@ -39,7 +39,13 @@ modules = [
         'updated_by': admin['username']
     },
     {
-        'name': 'Materias',
+        'name': 'Administradores',
+        'status': True,
+        'updated_at': datetime.now(),
+        'updated_by': admin['username']
+    },
+    {
+        'name': 'Clases',
         'status': True,
         'updated_at': datetime.now(),
         'updated_by': admin['username']

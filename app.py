@@ -10,6 +10,14 @@ from pymongo import MongoClient
 
 mongo: MongoClient = MongoClient(os.getenv('MONGO_URI'))
 
+def delete_data():
+    print('Eliminando información...')
+    mongo.rspd.modulo.delete_many({})
+    mongo.rspd.perfil.delete_many({})
+    mongo.rspd.permisos.delete_many({})
+    mongo.rspd.perfil_usuario.delete_many({})
+    mongo.rspd.usuario.delete_many({})
+
 def insert_profiles():
     print('Insertando perfiles...')
     mongo.rspd.perfil.insert_many(profiles)
@@ -104,6 +112,8 @@ def insert_admin():
     })
 
 
+# Comentar esta opción en caso de no querer eliminar los registros
+delete_data()
 insert_profiles()
 insert_modules()
 insert_permissions()
