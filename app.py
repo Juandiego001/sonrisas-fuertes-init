@@ -48,7 +48,7 @@ def insert_permissions():
                     }
                 )
             elif profile['name'] == 'Profesor':
-                if module['name'] in ['Grupos', 'Estudiantes', 'Materias']:
+                if module['name'] in ['Grupos', 'Estudiantes', 'Clases']:
                     permissions.append(
                         {
                             'profileid': profile['_id'],
@@ -73,7 +73,7 @@ def insert_permissions():
                         }
                     )
             elif profile['name'] in ['Estudiante', 'Acudiente'] :
-                if module['name'] == 'Materias':
+                if module['name'] == 'Clases':
                     permissions.append(
                         {
                             'profileid': profile['_id'],
