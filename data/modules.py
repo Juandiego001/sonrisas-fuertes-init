@@ -9,19 +9,7 @@ modules = [
         'updated_by': admin['username']
     },
     {
-        'name': 'Periodos académicos',
-        'status': True,
-        'updated_at': datetime.now(),
-        'updated_by': admin['username']
-    },
-    {
         'name': 'Reportes',
-        'status': True,
-        'updated_at': datetime.now(),
-        'updated_by': admin['username']
-    },
-    {
-        'name': 'Grupos',
         'status': True,
         'updated_at': datetime.now(),
         'updated_by': admin['username']
@@ -40,12 +28,6 @@ modules = [
     },
     {
         'name': 'Administradores',
-        'status': True,
-        'updated_at': datetime.now(),
-        'updated_by': admin['username']
-    },
-    {
-        'name': 'Clases',
         'status': True,
         'updated_at': datetime.now(),
         'updated_by': admin['username']
